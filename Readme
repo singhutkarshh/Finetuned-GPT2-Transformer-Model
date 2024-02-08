@@ -1,0 +1,19 @@
+#install packages
+
+# pip install torch numpy transformers datasets tiktoken wandb tqdm
+
+# prepare data into a format that can be used by the model
+
+# python data/custom_data/prepare.py
+
+# train the model
+
+# python train.py config/finetune.py
+
+# sample from the model
+
+# !python sample.py \
+#       --init_from="resume" \
+#       --out_dir="out" \
+#       --start="What is Uptroop" \
+#       --num_samples=5 --max_new_tokens=100
